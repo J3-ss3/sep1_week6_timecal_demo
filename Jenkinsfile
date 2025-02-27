@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  tools{
+    maven 'Maven'
+  }
   stages {
     stage ('checking'){
       steps {
@@ -9,7 +12,7 @@ pipeline {
 
     stage (build) {
       steps{
-        brew 'mvn clean install'
+        sh 'mvn clean install'
       }
     }
   }

@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage ('checking'){
       stages {
-        git branch: 'mail', url: 'https://github.com/J3-ss3/sep1_week6_timecal_demo.git'
+        stage (git branch: 'mail', url: 'https://github.com/J3-ss3/sep1_week6_timecal_demo.git'){
+        }
       }
     }
 

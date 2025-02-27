@@ -9,7 +9,7 @@ pipeline {
 
     stage (build) {
       steps{
-        sh 'mvn clean install'
+        brew 'mvn clean install'
       }
     }
   }
